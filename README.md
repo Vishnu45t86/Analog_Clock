@@ -25,3 +25,8 @@ TimeWise: A Modern Clock Project is a JavaScript project that creates a digital 
 # Dark Mode
 ![image](https://github.com/Vishnu45t86/Analog_Clock/assets/109750872/267050eb-b537-4807-84ef-c614db4f9de9)
 
+
+
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad4cd51e-ea10-4e37-8a32-1ad67322dd7e/deploy-status)](https://app.netlify.com/sites/time-wise-project-vishnu/deploys)
