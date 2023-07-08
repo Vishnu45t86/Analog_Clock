@@ -18,4 +18,10 @@ TimeWise: A Modern Clock Project is a JavaScript project that creates a digital 
  The current date is displayed below the clock.
  Every minute, a new inspiring quote will be randomly displayed according to day,afternoon,etc.
  To switch between dark and light mode, click on the toggle button located at the top right corner of the page.
+
+ # Light Mode
 ![image](https://github.com/Vishnu45t86/Analog_Clock/assets/109750872/f2a9ee7a-e5fa-4aab-a8c7-7d4e7e579537)
+
+# Dark Mode
+![image](https://github.com/Vishnu45t86/Analog_Clock/assets/109750872/267050eb-b537-4807-84ef-c614db4f9de9)
+
