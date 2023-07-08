@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: auto;
+    padding: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #f6f6fb;
+    --white-color: #fff;
+    --black-color: #18191a;
+    --red-color: #e74c3c;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+
+}
+
+body.dark {
+    --primary-color: #242526;
+    --white-color: #18191a;
+    --black-color: #fff;
+    --red-color: #e74c3c;
+}
+
+.dates {
+    font-size: 100px;
+    padding-bottom: 40px;
+    color: var(--black-color);
+}
+
+.greeting {
+    display: block;
+    color: var(--black-color);
+}
+
+.container-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.quote-box {
+    position: absolute;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid var(--black-color);
+    background-color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 2;
+    max-width: 35%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    margin-left: 0;
+}
+
+.container-clock .clock {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: var(--white-color);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.clock label {
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    transform: rotate(calc(var(--i) * (360deg / 12)));
+}
+
+.clock label span {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black-color);
+    transform: rotate(calc(var(--i) * (-360deg / 12)));
+}
+
+.container-clock .indicator {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #e74c3c;
+    display: flex;
+    justify-content: center;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 100;
+    background: var(--black-color);
+    border: 4px solid var(--red-color);
+}
+
+.indicator .hand {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    bottom: 0;
+    border-radius: 25px;
+    transform-origin: bottom;
+    background-color: var(--red-color);
+}
+
+.hand.min {
+    height: 120px;
+    width: 5px;
+
+    background: var(--black-color);
+}
+
+.hand.hr {
+    height: 100px;
+    width: 8px;
+
+    background: var(--black-color);
+}
+
+.switch-mode {
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+    background: var(--black-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:576px) {
+    .dates {
+
+        font-weight: 600;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .dates {
+        text-align: center;
+    }
+
+    .container-clock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-top: 150px;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .dates {
+        font-size: 75px;
+    }
+
+    body {
+        display: block;
+    }
+
+    .dates {
+        text-align: center;
+    }
+
+    .text {
+        margin: 5%;
+
+    }
+
+    .quote-box {
+        max-width: 100px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container-clock {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .quote-box {
+        margin: auto;
+        max-width: 565px;
+    }
+
+
+}
